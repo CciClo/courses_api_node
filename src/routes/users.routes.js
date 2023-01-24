@@ -7,7 +7,7 @@ const router = Router();
 router.get("/users/courses", authMiddleware, getUserWithCourses);
 router.get('/users/:id', getUserById); // esta siendo confundida con otras direcciones => si se pone arriba de la direccion que es parecida da error
 router.post("/users", createUser);
-router.post('/users/courses/:id', authMiddleware, addACourseToAUser);
+router.post('/users/courses/:courseId', authMiddleware, addACourseToAUser);
 router.put('/users', authMiddleware, updateUser);
 
 

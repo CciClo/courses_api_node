@@ -6,7 +6,7 @@ const authMiddleware = require("../middlwares/auth.middleware");
 const router = Router();
 
 router.get('/courses', /*authMiddleware,*/ getAllCourses);
-router.get('/courses/cv', getAllCoursesWithCategoriesAndVideos)
+router.get('/courses/cv', getAllCoursesWithCategoriesAndVideos);
 router.post('/courses', authMiddleware,createCourse);
 router.put('/courses/:id', authMiddleware, updateCourses);
 

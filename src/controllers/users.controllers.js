@@ -38,7 +38,7 @@ const createUser = async (req, res) => {
 
 const addACourseToAUser = async (req, res) => {
     const {id: userId} = req.user;
-    const {id: courseId} = req.params;
+    const {courseId} = req.params;
 
     try {
         // console.log(userId, courseId);

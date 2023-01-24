@@ -33,6 +33,6 @@ const Users = db.define("users", {
         type: DataTypes.STRING,
         allowNull: false,
     }
-})
+});
 
 module.exports = Users;
